@@ -7,8 +7,8 @@ app.get(`/`, (req,res) => {
 })
 
 // include and initialize the rollbar library with your access token
-var Rollbar = require('rollbar')
-var rollbar = new Rollbar({
+const Rollbar = require('rollbar')
+const rollbar = new Rollbar({
   accessToken: 'b60374cebe244bc8a5702cedee515c70',
   captureUncaught: true,
   captureUnhandledRejections: true,
